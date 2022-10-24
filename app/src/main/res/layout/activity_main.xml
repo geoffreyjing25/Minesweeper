@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <hu.ait.minesweeper.view.MineSweeperView
+            android:id="@+id/minesweeper"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Switch
+            android:id="@+id/toggleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Flag Switch:"
+            android:textColor="@color/purple_500"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--        <ToggleButton-->
+<!--            android:id="@+id/toggleFlag"-->
+<!--            android:textOff="FLAG ON"-->
+<!--            android:textOn="FLAG OFF"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="50dp" />-->
+    </LinearLayout>
+
+
+</LinearLayout>
